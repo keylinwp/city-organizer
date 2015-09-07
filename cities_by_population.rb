@@ -23,4 +23,3 @@ module CitiesByPopulation
   end
   
 end
-
