@@ -38,6 +38,6 @@ class CityOrganizer
     puts "Sorted files done"
   end
    
-  x = CityOrganizer.new()
+  CityOrganizer.new
 
 end
