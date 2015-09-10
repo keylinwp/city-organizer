@@ -2,7 +2,7 @@ $LOAD_PATH << '.'
 require 'city'
 
 module CitiesByPopulation 
-  
+
   FILE_NAME = 'Cities_By_Population.txt'
 
   def sort_cities_by_population(cities)
