@@ -27,9 +27,9 @@ class CityOrganizer
     file  = gets.chomp
   end
 
-  def refact_interstates(interstates)
-    interstates = interstates.split(";").each(&:strip!)
-    interstates.map! {|x| x.split("-")[1].to_i} 
+  def rebuild_interstates(interstates)
+    interstates = interstates.split(";").map(&:strip)
+    interstates.map! {|interstate| interstate.split("-")[1].to_i} 
   end
   
   def sort_cities
@@ -37,7 +37,7 @@ class CityOrganizer
     sort_interstates_by_city(@cities)
     puts "Sorted files done"
   end
-   
-  x = CityOrganizer.new()
+
+  CityOrganizer.new()
 
 end
